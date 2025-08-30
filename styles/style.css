@@ -9,14 +9,40 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+* {
+  /* outline: 1px solid red; */
+}
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  block-size: 3000px;
+  padding: 100px 0;
   font-family: var(--main-font, sans-serif);
-  font-variation-settings: 'wght' var(--main-font-weight);
-  font-size: 18px;
+  font-size: 16px;
   background-image: var(--page-bg);
   background-size: cover;
   background-attachment: fixed;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  block-size: 3000px;
+  font-variation-settings: 'wght' var(--main-font-weight);
+}
+.header {
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  padding-block: var(--clamp-header-padding);
+  font-family: var(--accent-font, cursive);
+}
+.container {
+  margin: 0 auto;
+  background-color: #fff;
+  inline-size: var(--clamp-page-width);
+}
+.logo {
+  font-size: var(--clamp-logo);
+  text-align: center;
+  text-decoration: none;
+}
+.title {
+  font-size: var(--clamp-title);
+  text-align: center;
+  text-transform: uppercase;
 }

@@ -20,4 +20,8 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --clamp-page-width: clamp(375px, 100%, 700px);
+  --clamp-logo: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --clamp-title: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --clamp-header-padding: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);
 }
