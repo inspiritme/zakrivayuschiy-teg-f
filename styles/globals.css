@@ -6,7 +6,13 @@
 *::before {
   box-sizing: border-box;
 }
+html {
+  /* overflow-y: scroll; */
+  height: 100%;
+  scroll-behavior: smooth;
+}
 body {
+  height: 100%;
   margin: 0;
 }
 h1,
@@ -43,4 +49,10 @@ ol {
   block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+button {
+  display: inline-flex;
+  box-sizing: border-box;
+  cursor: pointer;
+  all: unset;
 }
