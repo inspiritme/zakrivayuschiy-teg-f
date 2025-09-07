@@ -81,8 +81,6 @@
   font-weight: 400;
   font-size: 14px;
 }
-.main {
-}
 ul li {
   padding-bottom: 25px;
 }
@@ -93,8 +91,6 @@ ul li,
 }
 ul li:not(:last-child) {
   margin-bottom: 50px;
-}
-.card {
 }
 .card__title {
   padding-inline: 10px;
@@ -185,8 +181,6 @@ ul li:not(:last-child) {
 }
 .card__icon-button:focus-visible {
   outline-color: var(--accent-color, #000);
-}
-.heart {
 }
 .contour {
   transition: fill 0.1s 0s linear;
