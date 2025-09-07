@@ -173,7 +173,7 @@ ul li:not(:last-child) {
 .card__icon-button {
   border: 0;
   outline: 2px solid transparent;
-  transition: all 0.3s ease;
+  transition: outline 0.3s ease;
   block-size: 38px;
 }
 .card__icon-button:focus {
