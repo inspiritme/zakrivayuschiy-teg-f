@@ -24,7 +24,7 @@
   block-size: 191px;
 }
 .dialog[open]::backdrop {
-  background: rgba(0 0 0 / 0.6);
+  background: rgba(0 0 0 / 0.8);
 }
 .dialog[open] .dialog__icon {
   flex-shrink: 0;
@@ -94,7 +94,7 @@ ul li:not(:last-child) {
 }
 .card__title {
   padding-inline: 10px;
-  padding-block: 4px;
+  padding-block: 6px;
   font-family: var(--main-font, sans-serif);
   font-size: 18px;
   line-height: 100%;
@@ -167,7 +167,7 @@ ul li:not(:last-child) {
   flex-direction: row;
   justify-content: end;
   align-items: center;
-  gap: 12px;
+  gap: 7px;
   margin-inline-end: 25px;
 }
 .card__icon-button {
@@ -198,32 +198,31 @@ ul li:not(:last-child) {
 }
 .like-icon:hover .core {
   fill: var(--accent-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
 }
 .like-icon:hover .main-body {
   fill: var(--accent-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 .like-icon:active .core {
   fill: var(--animation-fill-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
 }
 .like-icon:active .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
 }
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition-delay: 0.06s;
-  transition-duration: 0.3s;
+  transition: fill 0.3s linear 0.06s;
 }
 .card__like-button {
   text-align: center;
@@ -244,7 +243,7 @@ ul li:not(:last-child) {
   background-color: var(--main-color, #fff);
   transition: transform 0.5s ease-in-out;
   transform: scale(0);
-  transform-origin: 0 0;
+  transform-origin: left;
   pointer-events: none;
   mix-blend-mode: difference;
 }
@@ -287,14 +286,17 @@ ul li:not(:last-child) {
 }
 
 @media (width>=700px) {
+  .header {
+    margin-block-end: 98px;
+  }
   .button-save {
     flex-direction: row;
     block-size: 55px;
     min-inline-size: 335px;
   }
   .button__icon {
-    inline-size: 28px;
-    block-size: 28px;
+    inline-size: 21px;
+    block-size: 21px;
   }
 }
 body:has(.dialog[open]) {
