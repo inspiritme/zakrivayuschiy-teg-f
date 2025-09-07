@@ -1,1 +1,1 @@
-В этой папке будут храниться все необходимые SVG-файлы для сайта.
+https://inspiritme.github.io/zakrivayuschiy-teg-f/
