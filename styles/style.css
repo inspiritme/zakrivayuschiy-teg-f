@@ -233,12 +233,14 @@ ul li:not(:last-child) {
   transition-duration: 0.3s;
 }
 .card__like-button {
+  text-align: center;
   justify-content: center;
   align-items: center;
   inline-size: 130px;
   block-size: 38px;
 }
 .button {
+  text-align: center;
   position: relative;
   transition: box-shadow 0.3s ease;
 }
@@ -272,6 +274,7 @@ ul li:not(:last-child) {
   place-items: center;
 }
 .button-save {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
