@@ -242,7 +242,7 @@ ul li:not(:last-child) {
   inset: 0;
   background-color: var(--main-color, #fff);
   transition: transform 0.5s ease-in-out;
-  transform: scale(0);
+  transform: scaleX(0);
   transform-origin: left;
   pointer-events: none;
   mix-blend-mode: difference;
@@ -252,7 +252,7 @@ ul li:not(:last-child) {
   outline: none;
 }
 .button:hover::after {
-  transform: scale(1);
+  transform: scaleX(1);
 }
 .button__text {
   position: relative;
