@@ -50,8 +50,8 @@ ol {
   white-space: nowrap;
 }
 button {
+  all: unset;
   display: inline-flex;
   box-sizing: border-box;
   cursor: pointer;
-  all: unset;
 }
