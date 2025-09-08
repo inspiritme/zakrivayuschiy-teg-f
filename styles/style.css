@@ -24,7 +24,8 @@
   block-size: 191px;
 }
 .dialog[open]::backdrop {
-  background: rgba(0 0 0 / 0.8);
+  background-color: var(--accent-color, #000);
+  opacity: 0.75;
 }
 .dialog[open] .dialog__icon {
   flex-shrink: 0;
