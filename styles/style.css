@@ -6,7 +6,11 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 */
-.dialog[open] {
+body:has(.dialog[open]) {
+  padding-right: 17px;
+  overflow-y: hidden;
+}
+dialog {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -18,25 +22,31 @@
   margin: 0;
   padding-inline: 40px;
   padding-block: 30px;
+  opacity: 0;
   overflow: hidden;
+  transition: opacity 0.3s linear;
   transform: translate(-50%, -50%);
+  pointer-events: none;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   block-size: 191px;
 }
-.dialog[open]::backdrop {
-  background-color: var(--accent-color, #000);
-  opacity: 0.75;
+.dialog[open] {
+  opacity: 1;
+  pointer-events: all;
 }
-.dialog[open] .dialog__icon {
+.dialog[open]::backdrop {
+  background-color: rgba(0 0 0 / 0.75);
+}
+.dialog__icon {
   flex-shrink: 0;
   inline-size: 39px;
   block-size: 39px;
 }
-.dialog[open] .dialog__text {
+.dialog__text {
   line-height: 150%;
   text-transform: uppercase;
 }
-.dialog[open] .dialog__button {
+.dialog__button {
   display: block;
   grid-column: span 2;
   margin-block-start: calc(30px - 12px);
@@ -226,15 +236,15 @@ ul li:not(:last-child) {
   transition: fill 0.3s linear 0.06s;
 }
 .card__like-button {
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
   inline-size: 130px;
   block-size: 38px;
 }
 .button {
-  text-align: center;
   position: relative;
+  text-align: center;
   transition: box-shadow 0.3s ease;
 }
 .button::after {
@@ -299,8 +309,4 @@ ul li:not(:last-child) {
     inline-size: 21px;
     block-size: 21px;
   }
-}
-body:has(.dialog[open]) {
-  padding-right: 17px;
-  overflow-y: hidden;
 }
